@@ -8,15 +8,9 @@
 
 
 # Experience
-## **Utah Valley University**, Testing Center Administrator and Proctor
-
-Orem, UT
+## **Testing Center Administrator and Proctor**, Utah Valley University -- Orem, UT
 
 Jan 2025 – present
-
-
-
-1 year 4 months
 
 - Administered standardized tests for thousands of students and professionals
 
@@ -24,15 +18,9 @@ Jan 2025 – present
 
 
 
-## **Utah State University**, Computer Science Teaching Assistant
-
-Logan, UT
+## **Computer Science Teaching Assistant**, Utah State University -- Logan, UT
 
 Aug 2024 – Dec 2025
-
-
-
-1 year 5 months
 
 - Evaluated over 1,000 Python and Java assignments, providing detailed feedback
 
@@ -41,28 +29,14 @@ Aug 2024 – Dec 2025
 
 
 # Education
-## **Utah Valley University**, Software Engineering
-
-**BS**
-
-
-Orem, UT
-
-
+## **Utah Valley University**, BS in Software Engineering -- Orem, UT
 Apr 2026
 
 - GPA: 3.96
 
 
 
-## **Lakeland Community College**, General Studies
-
-**AS, AA**
-
-
-Kirtland, OH
-
-
+## **Lakeland Community College**, AS, AA in General Studies -- Kirtland, OH
 May 2021
 
 - GPA: 3.58
@@ -74,9 +48,7 @@ May 2021
 
 
 # Portfolio
-## **Markdown Learning Tutorial**
-
-learn-markdown-game.com
+## **Markdown Learning Tutorial** -- **learn-markdown-game.com**
 
 - Developed using React and Google Analytics with a focus on UI/UX
 
@@ -92,9 +64,7 @@ learn-markdown-game.com
 
 
 
-## **Dynamic QR Code Manager**
-
-QR-Universe.com
+## **Dynamic QR Code Manager** -- **QR-Universe.com**
 
 - Architected with NextJS, Vercel, Supabase, cron jobs, and SQL
 

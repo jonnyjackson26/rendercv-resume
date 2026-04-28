@@ -27,11 +27,11 @@
   typography-line-spacing: 0.6em,
   typography-alignment: "justified",
   typography-date-and-location-column-alignment: right,
-  typography-font-family-body: "Source Sans 3",
-  typography-font-family-name: "Source Sans 3",
-  typography-font-family-headline: "Source Sans 3",
-  typography-font-family-connections: "Source Sans 3",
-  typography-font-family-section-titles: "Source Sans 3",
+  typography-font-family-body: "Raleway",
+  typography-font-family-name: "Raleway",
+  typography-font-family-headline: "Raleway",
+  typography-font-family-connections: "Raleway",
+  typography-font-family-section-titles: "Raleway",
   typography-font-size-body: 10pt,
   typography-font-size-name: 30pt,
   typography-font-size-headline: 10pt,
@@ -41,13 +41,13 @@
   typography-small-caps-headline: false,
   typography-small-caps-connections: false,
   typography-small-caps-section-titles: false,
-  typography-bold-name: true,
+  typography-bold-name: false,
   typography-bold-headline: false,
   typography-bold-connections: false,
-  typography-bold-section-titles: true,
+  typography-bold-section-titles: false,
   links-underline: false,
   links-show-external-link-icon: false,
-  header-alignment: center,
+  header-alignment: left,
   header-photo-width: 3.5cm,
   header-space-below-name: 0.7cm,
   header-space-below-headline: 0.7cm,
@@ -57,7 +57,7 @@
   header-connections-display-urls-instead-of-usernames: false,
   header-connections-separator: "",
   header-connections-space-between-connections: 0.5cm,
-  section-titles-type: "with_partial_line",
+  section-titles-type: "with_full_line",
   section-titles-line-thickness: 0.5pt,
   section-titles-space-above: 0.5cm,
   section-titles-space-below: 0.3cm,
@@ -68,15 +68,15 @@
   entries-side-space: 0.2cm,
   entries-space-between-columns: 0.1cm,
   entries-allow-page-break: false,
-  entries-short-second-row: true,
+  entries-short-second-row: false,
   entries-degree-width: 1cm,
   entries-summary-space-left: 0cm,
-  entries-summary-space-above: 0cm,
+  entries-summary-space-above: 0.12cm,
   entries-highlights-bullet:  "•" ,
   entries-highlights-nested-bullet:  "•" ,
-  entries-highlights-space-left: 0.15cm,
-  entries-highlights-space-above: 0cm,
-  entries-highlights-space-between-items: 0cm,
+  entries-highlights-space-left: 0cm,
+  entries-highlights-space-above: 0.12cm,
+  entries-highlights-space-between-items: 0.12cm,
   entries-highlights-space-between-bullet-and-text: 0.5em,
   date: datetime(
     year: 2026,
@@ -101,42 +101,34 @@
 
 #regular-entry(
   [
-    #strong[Utah Valley University], Testing Center Administrator and Proctor
-
-    - Administered standardized tests for thousands of students and professionals
-
-    - Developed Excel workflows to automate calculations, saving administration 35 hours per week
+    #strong[Testing Center Administrator and Proctor], Utah Valley University -- Orem, UT
 
   ],
   [
-    Orem, UT
-
     Jan 2025 – present
 
-    
+  ],
+  main-column-second-row: [
+    - Administered standardized tests for thousands of students and professionals
 
-    1 year 4 months
+    - Developed Excel workflows to automate calculations, saving administration 35 hours per week
 
   ],
 )
 
 #regular-entry(
   [
-    #strong[Utah State University], Computer Science Teaching Assistant
-
-    - Evaluated over 1,000 Python and Java assignments, providing detailed feedback
-
-    - Conducted weekly office hours supporting 60+ students with debugging, algorithm optimization, and code review
+    #strong[Computer Science Teaching Assistant], Utah State University -- Logan, UT
 
   ],
   [
-    Logan, UT
-
     Aug 2024 – Dec 2025
 
-    
+  ],
+  main-column-second-row: [
+    - Evaluated over 1,000 Python and Java assignments, providing detailed feedback
 
-    1 year 5 months
+    - Conducted weekly office hours supporting 60+ students with debugging, algorithm optimization, and code review
 
   ],
 )
@@ -145,26 +137,29 @@
 
 #education-entry(
   [
-    #strong[Utah Valley University], Software Engineering
-
-    - GPA: 3.96
+    #strong[Utah Valley University], BS in Software Engineering -- Orem, UT
 
   ],
   [
-    Orem, UT
-
     Apr 2026
 
   ],
-  degree-column: [
-    #strong[BS]
+  main-column-second-row: [
+    - GPA: 3.96
+
   ],
 )
 
 #education-entry(
   [
-    #strong[Lakeland Community College], General Studies
+    #strong[Lakeland Community College], AS, AA in General Studies -- Kirtland, OH
 
+  ],
+  [
+    May 2021
+
+  ],
+  main-column-second-row: [
     - GPA: 3.58
 
     - Graduated with 1st Honors
@@ -172,56 +167,49 @@
     - Completed during high school through dual enrollment program
 
   ],
-  [
-    Kirtland, OH
-
-    May 2021
-
-  ],
-  degree-column: [
-    #strong[AS, AA]
-  ],
 )
 
 == Portfolio
 
-#regular-entry(
+  #regular-entry(
   [
-    #strong[Markdown Learning Tutorial]
+    #strong[Markdown Learning Tutorial] -- #strong[learn-markdown-game.com]
 
+  ],
+  [
+  ],
+  main-column-second-row: [
     - Developed using React and Google Analytics with a focus on UI\/UX
 
     - Maintains 200 monthly active users and handles over 1,000 challenges completed per month
 
   ],
-  [
-    learn-markdown-game.com
-
-  ],
 )
 
-#regular-entry(
+  #regular-entry(
   [
     #strong[Temple Tracker Mobile App]
 
+  ],
+  [
+  ],
+  main-column-second-row: [
     - Built using React Native, Expo, Firebase, PostHog, and Sentry
 
     - Achieved 300+ downloads across the App Store and Google Play Store within 3 months
 
   ],
-  [
-  ],
 )
 
-#regular-entry(
+  #regular-entry(
   [
-    #strong[Dynamic QR Code Manager]
-
-    - Architected with NextJS, Vercel, Supabase, cron jobs, and SQL
+    #strong[Dynamic QR Code Manager] -- #strong[QR-Universe.com]
 
   ],
   [
-    QR-Universe.com
+  ],
+  main-column-second-row: [
+    - Architected with NextJS, Vercel, Supabase, cron jobs, and SQL
 
   ],
 )

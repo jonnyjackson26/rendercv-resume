@@ -1,0 +1,56 @@
+name: Publish Resume To Website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish-resume:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out resume repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install RenderCV
+        run: pip install "rendercv[full]"
+
+      - name: Render PDF
+        run: rendercv render resume.yml
+
+      - name: Check out website repo
+        uses: actions/checkout@v4
+        with:
+          repository: jonnyjackson26/jonny-jackson
+          ref: main
+          token: ${{ secrets.WEBSITE_REPO_TOKEN }}
+          path: website
+
+      - name: Copy PDF into website repo
+        run: |
+          mkdir -p website/static/uploads
+          cp rendercv_output/Jonathan_Jackson_CV.pdf website/static/uploads/jonny-jackson-resume.pdf
+
+      - name: Commit and push updated PDF
+        working-directory: website
+        run: |
+          if git diff --quiet -- static/uploads/jonny-jackson-resume.pdf; then
+            echo "No resume changes to publish."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add static/uploads/jonny-jackson-resume.pdf
+          git commit -m "Update published resume"
+          git push origin main
