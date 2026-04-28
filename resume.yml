@@ -10,11 +10,18 @@ cv:
       username: "jonny-jackson"
   sections:
     experience:
+      - company: "Church of Jesus Christ of Latter-Day Saints"
+        position: "Software Engineer Intern"
+        location: "Riverton, UT"
+        start_date: "2026-04"
+        end_date: "present"
+        highlights:
+          - "C#, .NET, Azure Functions"
       - company: "Utah Valley University"
         position: "Testing Center Administrator and Proctor"
         location: "Orem, UT"
         start_date: "2025-01"
-        end_date: "present"
+        end_date: "2026-03"
         highlights:
           - "Administered standardized tests for thousands of students and professionals"
           - "Developed Excel workflows to automate calculations, saving administration 35 hours per week"
@@ -33,28 +40,19 @@ cv:
         location: "Orem, UT"
         end_date: "2026-04"
         highlights:
-          - "GPA: 3.96"
-      - institution: "Lakeland Community College"
-        area: "General Studies"
-        degree: "AS, AA"
-        location: "Kirtland, OH"
-        end_date: "2021-05"
-        highlights:
-          - "GPA: 3.58"
-          - "Graduated with 1st Honors"
-          - "Completed during high school through dual enrollment program"
+          - "GPA: 3.96, Summa Cum Laude"
     portfolio:
       - name: "Markdown Learning Tutorial"
-        location: "learn-markdown-game.com"
+        location: "[learn-markdown-game.com](https://learn-markdown-game.com)"
         highlights:
           - "Developed using React and Google Analytics with a focus on UI/UX"
           - "Maintains 200 monthly active users and handles over 1,000 challenges completed per month"
       - name: "Temple Tracker Mobile App"
         highlights:
           - "Built using React Native, Expo, Firebase, PostHog, and Sentry"
-          - "Achieved 300+ downloads across the App Store and Google Play Store within 3 months"
+          - "Consistently achieves 200+ WAU"
       - name: "Dynamic QR Code Manager"
-        location: "QR-Universe.com"
+        location: "[QR-Universe.com](https://qr-universe.com)"
         highlights:
           - "Architected with NextJS, Vercel, Supabase, cron jobs, and SQL"
     skills:
@@ -63,7 +61,7 @@ cv:
       - label: "Languages"
         details: "English (Native), Spanish (Fluent)"
       - label: "Certifications & Honors"
-        details: "Eagle Scout, Leadership (Managed team of 12 volunteers)"
+        details: "Eagle Scout, Leadership (Managed team of 12 volunteers"
 
 design:
   theme: engineeringclassic
