@@ -41,6 +41,7 @@ cv:
         end_date: "2026-04"
         highlights:
           - "GPA: 3.96, Summa Cum Laude"
+          - "Minor in Entrepreneurship"
     portfolio:
       - name: "Markdown Learning Tutorial"
         location: "[learn-markdown-game.com](https://learn-markdown-game.com)"
