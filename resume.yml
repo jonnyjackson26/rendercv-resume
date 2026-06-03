@@ -77,7 +77,7 @@ cv:
         details: "Eagle Scout"
 
 design:
-  theme: engineeringclassic
+  theme: classic
   page:
     size: us-letter
     top_margin: 0.7in
