@@ -100,11 +100,11 @@ design:
     alignment: justified
     date_and_location_column_alignment: right
     font_family:
-      body: Raleway
-      name: Raleway
-      headline: Raleway
-      connections: Raleway
-      section_titles: Raleway
+      body: Source Sans 3
+      name: Source Sans 3
+      headline: Source Sans 3
+      connections: Source Sans 3
+      section_titles: Source Sans 3
     font_size:
       body: 10pt
       name: 30pt
@@ -117,15 +117,15 @@ design:
       connections: false
       section_titles: false
     bold:
-      name: false
+      name: true
       headline: false
       connections: false
-      section_titles: false
+      section_titles: true
   links:
     underline: false
     show_external_link_icon: false
   header:
-    alignment: left
+    alignment: center
     photo_width: 3.5cm
     photo_position: left
     photo_space_left: 0.4cm
@@ -141,7 +141,7 @@ design:
       separator: ''
       space_between_connections: 0.5cm
   section_titles:
-    type: with_full_line
+    type: with_partial_line
     line_thickness: 0.5pt
     space_above: 0.5cm
     space_below: 0.3cm
@@ -149,23 +149,24 @@ design:
     allow_page_break: true
     space_between_regular_entries: 1.2em
     space_between_text_based_entries: 0.3em
-    show_time_spans_in: []
+    show_time_spans_in:
+      - experience
   entries:
     date_and_location_width: 4.15cm
     side_space: 0.2cm
     space_between_columns: 0.1cm
     allow_page_break: false
-    short_second_row: false
+    short_second_row: true
     degree_width: 1cm
     summary:
-      space_above: 0.12cm
+      space_above: 0cm
       space_left: 0cm
     highlights:
       bullet: •
       nested_bullet: •
-      space_left: 0cm
-      space_above: 0.12cm
-      space_between_items: 0.12cm
+      space_left: 0.15cm
+      space_above: 0cm
+      space_between_items: 0cm
       space_between_bullet_and_text: 0.5em
   templates:
     footer: '*NAME -- PAGE_NUMBER/TOTAL_PAGES*'
@@ -177,23 +178,29 @@ design:
       main_column: '**LABEL:** DETAILS'
     education_entry:
       main_column: |-
-        **INSTITUTION**, DEGREE_WITH_AREA -- LOCATION
+        **INSTITUTION**, AREA
         SUMMARY
         HIGHLIGHTS
-      degree_column:
-      date_and_location_column: DATE
+      degree_column: '**DEGREE**'
+      date_and_location_column: |-
+        LOCATION
+        DATE
     normal_entry:
       main_column: |-
-        **NAME** -- **LOCATION**
+        **NAME**
         SUMMARY
         HIGHLIGHTS
-      date_and_location_column: DATE
+      date_and_location_column: |-
+        LOCATION
+        DATE
     experience_entry:
       main_column: |-
-        **POSITION**, COMPANY -- LOCATION
+        **COMPANY**, POSITION
         SUMMARY
         HIGHLIGHTS
-      date_and_location_column: DATE
+      date_and_location_column: |-
+        LOCATION
+        DATE
     publication_entry:
       main_column: |-
         **TITLE**
@@ -201,6 +208,7 @@ design:
         AUTHORS
         URL (JOURNAL)
       date_and_location_column: DATE
+
 
 locale:
   language: english
