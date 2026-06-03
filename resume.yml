@@ -16,7 +16,10 @@ cv:
         start_date: "2026-04"
         end_date: "present"
         highlights:
-          - "C#, .NET, Azure Functions"
+          - "Developed cloud-based backend services using C# and .NET"
+          - "Built and maintained Azure Functions supporting internal applications"
+          - "Worked within an Agile/Scrum development team to deliver sprint-based features"
+          - "Contributed to code reviews, debugging, QA, and participated in development workflows"
       - company: "Utah Valley University"
         position: "Testing Center Administrator and Proctor"
         location: "Orem, UT"
@@ -46,23 +49,32 @@ cv:
       - name: "Markdown Learning Tutorial"
         location: "[learn-markdown-game.com](https://learn-markdown-game.com)"
         highlights:
-          - "Developed using React and Google Analytics with a focus on UI/UX"
+          - "React app with polished UI to teach markdown as a game"
           - "Maintains 200 monthly active users and handles over 1,000 challenges completed per month"
       - name: "Temple Tracker Mobile App"
         highlights:
           - "Built using React Native, Expo, Firebase, PostHog, and Sentry"
-          - "Consistently achieves 200+ WAU"
+          - "Consistently achieves 200+ WAU across iOS and Android"
       - name: "Dynamic QR Code Manager"
         location: "[QR-Universe.com](https://qr-universe.com)"
         highlights:
-          - "Architected with NextJS, Vercel, Supabase, cron jobs, and SQL"
+          - "SaaS platform for creating and tracking dynamic QR codes using Next.js, Supabase, and Vercel"
+          - "Implemented scan analytics, authentication, and automated background jobs"
     skills:
-      - label: "Technologies"
-        details: "NextJS, React Native, React, Python, Java, Git, SQL, REST APIs"
+      - label: "Languages"
+        details: "TypeScript, JavaScript, C#, Python, Java, SQL"
+      - label: "Frontend"
+        details: "React, Next.js, React Native, Expo, HTML, CSS"
+      - label: "Backend & Databases"
+        details: "Node.js, REST APIs, Supabase, Firebase, PostgreSQL"
+      - label: "Cloud & DevOps"
+        details: "Azure Functions, GitHub Actions, Vercel, Git"
+      - label: "Tools"
+        details: "PostHog, Sentry, Google Analytics"
       - label: "Languages"
         details: "English (Native), Spanish (Fluent)"
       - label: "Certifications & Honors"
-        details: "Eagle Scout, Leadership (Managed team of 12 volunteers"
+        details: "Eagle Scout"
 
 design:
   theme: engineeringclassic
@@ -231,4 +243,4 @@ locale:
 settings:
   current_date: today
   bold_keywords: []
-  pdf_title: NAME - CV
+  pdf_title: NAME - RESUME
